@@ -40,9 +40,14 @@ app.use( '*', async ( req, res ) => {
             <App />
         </StaticRouter>
     );
+    console.log(appHTML);
 
     // populate `#app` element with `appHTML`
-    indexHTML = indexHTML.replace( '<div id="app"></div>', `<div id="app">${ appHTML }</div>` );
+    indexHTML = indexHTML.replace( '<div id="app"></div>', `
+    <div id="app">
+    ${ appHTML }
+    </div>
+      ` );
 
     // set value of `initial_state` global variable
     indexHTML = indexHTML.replace(
