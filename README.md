@@ -1,3 +1,6 @@
+## Summary
+This is a sample that uses Optimizely React SDK to do Server side rendering using Node/Express backend. The backend uses a hardcoded datafile in synchrnous mode while the frontend uses SDK key along with a datafile manager to enable dynamic updates.
+
 ## How to Use
 
 ### Install packages
